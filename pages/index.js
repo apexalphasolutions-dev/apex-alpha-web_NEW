@@ -26,28 +26,28 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-        {/* Background Video Block */}
-        <div className="absolute inset-0 opacity-20 w-full h-full -z-10 pointer-events-none">
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline 
-            className="w-full h-full object-cover"
-          >
-            <source src="/background.mp4" type="video/mp4" />
-          </video>
-        </div>
-        
-        {/* Main Header - White Text */}
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white uppercase">
-          APEX ALPHA SOLUTIONS
-        </h1>
-        <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-8">
-          The next evolution of industrial automation and personal performance through Computer Vision.
-        </p>
-      </section>
+		<section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+		  {/* Background Video Block */}
+		  <div className="absolute inset-0 opacity-20 w-full h-full -z-10 pointer-events-none">
+			<video 
+			  autoPlay 
+			  loop 
+			  muted 
+			  playsInline 
+			  className="w-full h-full object-cover"
+			>
+			  <source src="/background.mp4" type="video/mp4" />
+			</video>
+		  </div>
+		  
+		  {/* Main Header - White Text */}
+		  <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white uppercase">
+			APEX ALPHA SOLUTIONS
+		  </h1>
+		  <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-8">
+			The next evolution of industrial automation and personal performance through Computer Vision.
+		  </p>
+		</section>
 
       {/* Core Solutions */}
       <section id="solutions" className="py-24 px-8 bg-slate-900">
