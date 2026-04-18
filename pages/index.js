@@ -26,9 +26,9 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-transparent">
-        {/* Background Video Container - Pushed to absolute back (-z-20) */}
-        <div className="absolute inset-0 -z-20 w-full h-full pointer-events-none bg-slate-950">
+      <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-slate-950">
+        {/* Background Video Block - Clean of background colors */}
+        <div className="absolute inset-0 -z-20 w-full h-full pointer-events-none overflow-hidden">
           <video 
             autoPlay 
             loop 
@@ -40,8 +40,8 @@ export default function LandingPage() {
           </video>
         </div>
         
-        {/* Dark overlay to ensure text readability (-z-10) */}
-        <div className="absolute inset-0 bg-black/30 -z-10" />
+        {/* Overlay for contrast */}
+        <div className="absolute inset-0 bg-black/20 -z-10" />
         
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white uppercase relative z-10">
           APEX ALPHA SOLUTIONS
