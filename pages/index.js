@@ -17,7 +17,7 @@ export default function Home() {
             <img 
               src="/Apex_Alpha_Solutions_Logo.jpg" 
               alt="Apex Alpha Solutions Logo" 
-              className="h-10 w-auto rounded border border-slate-700"
+              className="h-16 w-auto rounded border border-slate-700"
             />
           </div>
           <div className="hidden md:flex items-center gap-8 text-xs font-bold tracking-widest uppercase">
