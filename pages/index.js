@@ -27,21 +27,21 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-transparent">
-        {/* Background Video Block - Hardcoded URL to bypass path issues */}
-        <div className="absolute inset-0 -z-20 w-full h-full pointer-events-none">
+        {/* Background Video Container - Pushed to absolute back (-z-20) */}
+        <div className="absolute inset-0 -z-20 w-full h-full pointer-events-none bg-slate-950">
           <video 
             autoPlay 
             loop 
             muted 
             playsInline 
-            className="w-full h-full object-cover opacity-50"
+            className="w-full h-full object-cover opacity-60"
           >
             <source src="https://apexalphasolutions.com/background.mp4" type="video/mp4" />
           </video>
         </div>
         
-        {/* Overlay to ensure text pops */}
-        <div className="absolute inset-0 bg-slate-950/20 -z-10" />
+        {/* Dark overlay to ensure text readability (-z-10) */}
+        <div className="absolute inset-0 bg-black/30 -z-10" />
         
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white uppercase relative z-10">
           APEX ALPHA SOLUTIONS
@@ -54,6 +54,7 @@ export default function LandingPage() {
       {/* Core Solutions */}
       <section id="solutions" className="py-24 px-8 bg-slate-900 relative z-10">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+          
           <div className="p-8 rounded-2xl bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
             <div className="bg-blue-600/20 p-4 w-fit rounded-lg mb-6 group-hover:scale-110 transition-transform">
               <Activity className="text-blue-400 w-8 h-8" />
@@ -73,9 +74,11 @@ export default function LandingPage() {
               Seamlessly track parts on the move. AI vision systems feed real-time data to PLCs, bridging the gap between physical logistics and Unified Namespace.
             </p>
           </div>
+
         </div>
       </section>
 
+      {/* Technological Foundation */}
       <section id="vision" className="py-20 px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-16 uppercase tracking-widest border-b border-blue-900 pb-4">Technological Foundation</h2>
