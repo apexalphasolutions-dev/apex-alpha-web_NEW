@@ -27,14 +27,21 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-        {/* Background Rotating Logo */}
+        {/* Background Video Block */}
         <div className="absolute inset-0 opacity-20 w-full h-full -z-10 pointer-events-none">
-          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="w-full h-full object-cover"
+          >
             <source src="/background.mp4" type="video/mp4" />
           </video>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white">
+        {/* Main Header - White Text */}
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white uppercase">
           APEX ALPHA SOLUTIONS
         </h1>
         <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-8">
@@ -45,6 +52,8 @@ export default function LandingPage() {
       {/* Core Solutions */}
       <section id="solutions" className="py-24 px-8 bg-slate-900">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+          
+          {/* Gym Vision Card */}
           <div className="p-8 rounded-2xl bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
             <div className="bg-blue-600/20 p-4 w-fit rounded-lg mb-6 group-hover:scale-110 transition-transform">
               <Activity className="text-blue-400 w-8 h-8" />
@@ -55,6 +64,7 @@ export default function LandingPage() {
             </p>
           </div>
 
+          {/* Industrial Vision Card */}
           <div className="p-8 rounded-2xl bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
             <div className="bg-slate-600/20 p-4 w-fit rounded-lg mb-6 group-hover:scale-110 transition-transform">
               <Factory className="text-slate-300 w-8 h-8" />
@@ -64,10 +74,11 @@ export default function LandingPage() {
               Seamlessly track parts on the move. Our AI vision systems feed real-time data back to your PLCs, bridging the gap between physical logistics and Unified Namespace.
             </p>
           </div>
+
         </div>
       </section>
 
-      {/* Feature Breakdown */}
+      {/* Tech Stack */}
       <section id="vision" className="py-20 px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-16 uppercase tracking-widest border-b border-blue-900 pb-4">Technological Foundation</h2>
@@ -91,6 +102,7 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer id="contact" className="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
         <p>&copy; 2026 APEX ALPHA SOLUTIONS LLC. All Rights Reserved.</p>
       </footer>
