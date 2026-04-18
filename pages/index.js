@@ -1,3 +1,4 @@
+import '../styles/globals.css';
 import React from 'react';
 import Head from 'next/head';
 import { Camera, Factory, Activity, Cpu, ShieldCheck } from 'lucide-react';
