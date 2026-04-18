@@ -29,9 +29,9 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
         {/* Background Rotating Logo */}
-        <div className="absolute opacity-20 w-full max-w-2xl -z-10 pointer-events-none">
+        <div className="absolute inset-0 opacity-20 w-full h-full -z-10 pointer-events-none">
           <video autoPlay loop muted playsInline className="w-full h-full object-contain">
-            <source src="/Rotating_A_Logo_with_Neural_Network.mp4" type="video/mp4" />
+            <source src="/Rotating_A_Logo_with_Neural_Network_Background.mp4" type="video/mp4" />
           </video>
         </div>
         
