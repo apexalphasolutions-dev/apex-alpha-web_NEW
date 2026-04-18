@@ -12,7 +12,6 @@ export default function LandingPage() {
       {/* Navigation */}
       <nav className="flex justify-between items-center px-8 py-6 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
         <div className="flex items-center gap-4">
-          {/* Static Logo at Top */}
           <img 
             src="/Apex_Alpha_Solutions_Logo.jpg" 
             alt="Apex Alpha Solutions Logo" 
@@ -28,15 +27,16 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-        {/* Background Rotating Logo */}
+        {/* Background Rotating Logo - Full Screen Fix */}
         <div className="absolute inset-0 opacity-20 w-full h-full -z-10 pointer-events-none">
-          <video autoPlay loop muted playsInline className="w-full h-full object-contain">
+          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
             <source src="/Rotating_A_Logo_with_Neural_Network_Background.mp4" type="video/mp4" />
           </video>
         </div>
         
+        {/* Main Header - White Text */}
         <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white">
-			APEX ALPHA SOLUTIONS
+          APEX ALPHA SOLUTIONS
         </h1>
         <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-8">
           The next evolution of industrial automation and personal performance through Computer Vision.
