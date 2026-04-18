@@ -47,7 +47,7 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">
             APEX ALPHA SOLUTIONS
           </h1>
           <p className="text-slate-400 max-w-xl mx-auto text-lg md:text-xl font-light">
