@@ -9,7 +9,8 @@ export default function LandingPage() {
         <title>Apex Alpha Solutions | AI Vision Systems</title>
       </Head>
 
-      <nav className="flex justify-between items-center px-8 py-6 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
+      {/* Navigation */}
+      <nav className="flex justify-between items-center px-8 py-6 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-800">
         <div className="flex items-center gap-4">
           <img 
             src="/Apex_Alpha_Solutions_Logo.jpg" 
@@ -24,22 +25,33 @@ export default function LandingPage() {
         </div>
       </nav>
 
-      <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
-        <div className="absolute inset-0 opacity-20 w-full h-full -z-10 pointer-events-none">
-          <video autoPlay loop muted playsInline className="w-full h-full object-cover">
+      {/* Hero Section */}
+      <section className="relative h-[80vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden bg-transparent">
+        {/* Force Video to Background with fixed visibility */}
+        <div className="absolute inset-0 -z-10 w-full h-full pointer-events-none overflow-hidden">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            className="w-full h-full object-cover opacity-40 mix-blend-lighten"
+          >
             <source src="/background.mp4" type="video/mp4" />
           </video>
+          {/* Subtle gradient overlay to ensure text readability */}
+          <div className="absolute inset-0 bg-slate-950/40" />
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white uppercase">
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white uppercase relative z-10">
           APEX ALPHA SOLUTIONS
         </h1>
-        <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mb-8">
+        <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mb-8 relative z-10">
           The next evolution of industrial automation and personal performance through Computer Vision.
         </p>
       </section>
 
-      <section id="solutions" className="py-24 px-8 bg-slate-900">
+      {/* Core Solutions */}
+      <section id="solutions" className="py-24 px-8 bg-slate-900 relative z-10">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div className="p-8 rounded-2xl bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all group">
             <div className="bg-blue-600/20 p-4 w-fit rounded-lg mb-6 group-hover:scale-110 transition-transform">
@@ -57,13 +69,13 @@ export default function LandingPage() {
             </div>
             <h3 className="text-2xl font-bold mb-4 italic">Apex Industrial Edge</h3>
             <p className="text-slate-400 leading-relaxed">
-              Seamlessly track parts on the move. AI vision systems feed real-time data to PLCs, bridging physical logistics and Unified Namespace.
+              Seamlessly track parts on the move. AI vision systems feed real-time data to PLCs, bridging the gap between physical logistics and Unified Namespace.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="vision" className="py-20 px-8">
+      <section id="vision" className="py-20 px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-16 uppercase tracking-widest border-b border-blue-900 pb-4">Technological Foundation</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -86,7 +98,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <footer id="contact" className="py-12 border-t border-slate-800 text-center text-slate-500 text-sm">
+      <footer id="contact" className="py-12 border-t border-slate-800 text-center text-slate-500 text-sm relative z-10">
         <p>&copy; 2026 APEX ALPHA SOLUTIONS LLC. All Rights Reserved.</p>
       </footer>
     </div>
