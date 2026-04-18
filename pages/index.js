@@ -30,7 +30,7 @@ export default function LandingPage() {
         {/* Background Rotating Logo - Full Screen Fix */}
         <div className="absolute inset-0 opacity-20 w-full h-full -z-10 pointer-events-none">
           <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-            <source src="/Rotating_A_Logo_with_Neural_Network_Background.mp4" type="video/mp4" />
+            <source src="/background.mp4" type="video/mp4" />
           </video>
         </div>
         
